@@ -80,7 +80,14 @@ task copyLibClang(type: Sync) {
 
     from("${libclang_dir}") {
         include(clang_path_include)
-        include("libLLVM.*")
+        include("libLLVM*.*")
+        include("libc++.*")
+        include("libffi*.*")
+        include("libzstd.*")
+        include("libxml2*.*")
+        include("liblzma*.*")
+        include("libiconv*.*")
+        include("zlib*.*")
         exclude("clang.exe")
         into("libs")
         // make sure we drop shared library version name (Linux only)

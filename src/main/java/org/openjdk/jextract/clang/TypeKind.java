@@ -148,7 +148,7 @@ public enum TypeKind {
     OCLIntelSubgroupAVCImeSingleRefStreamin(CXType_OCLIntelSubgroupAVCImeSingleRefStreamin()),
     OCLIntelSubgroupAVCImeDualRefStreamin(CXType_OCLIntelSubgroupAVCImeDualRefStreamin()),
     ExtVector(CXType_ExtVector()),
-    Atomic(177);  // This is missing in auto-generated code
+    Atomic(CXType_Atomic());
 
     private final int value;
 

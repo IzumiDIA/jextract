@@ -39,8 +39,8 @@ import java.util.Objects;
 import java.util.function.Consumer;
 
 import static org.openjdk.jextract.clang.LibClang.STRING_ALLOCATOR;
-import static org.openjdk.jextract.clang.libclang.Index_h.C_INT;
-import static org.openjdk.jextract.clang.libclang.Index_h.C_POINTER;
+import static org.openjdk.jextract.clang.libclang.LayoutUtils.C_INT;
+import static org.openjdk.jextract.clang.libclang.LayoutUtils.C_POINTER;
 
 public class TranslationUnit extends ClangDisposable {
     private static final int MAX_RETRIES = 10;

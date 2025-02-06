@@ -34,8 +34,8 @@ import java.nio.file.Paths;
 import java.util.Objects;
 
 import static org.openjdk.jextract.clang.LibClang.STRING_ALLOCATOR;
-import static org.openjdk.jextract.clang.libclang.Index_h.C_INT;
-import static org.openjdk.jextract.clang.libclang.Index_h.C_POINTER;
+import static org.openjdk.jextract.clang.libclang.LayoutUtils.C_INT;
+import static org.openjdk.jextract.clang.libclang.LayoutUtils.C_POINTER;
 
 public class SourceLocation extends ClangDisposable.Owned {
 

@@ -38,7 +38,7 @@ import java.util.Objects;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 
-import static org.openjdk.jextract.clang.libclang.Index_h.C_CHAR;
+import static org.openjdk.jextract.clang.libclang.LayoutUtils.C_CHAR;
 
 public final class Cursor extends ClangDisposable.Owned {
 

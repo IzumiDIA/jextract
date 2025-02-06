@@ -17,16 +17,12 @@ import static org.openjdk.jextract.clang.libclang.LayoutUtils.*;
 
 /**
  * {@snippet lang=c :
- * typedef enum CXChildVisitResult {
- *     CXChildVisit_Break,
- *     CXChildVisit_Continue,
- *     CXChildVisit_Recurse
- * } (*CXCursorVisitor)(CXCursor, CXCursor, CXClientData)
+ * CXCursorVisitor visitor
  * }
  */
-public class CXCursorVisitor {
+public class clang_visitChildren$visitor {
 
-    CXCursorVisitor() {
+    clang_visitChildren$visitor() {
         // Should not be called directly
     }
 
@@ -34,7 +30,7 @@ public class CXCursorVisitor {
      * The function pointer signature, expressed as a functional interface
      */
     public interface Function {
-        int apply(MemorySegment cursor, MemorySegment parent, MemorySegment client_data);
+        int apply(MemorySegment _x0, MemorySegment _x1, MemorySegment _x2);
     }
 
     private static final FunctionDescriptor $DESC = FunctionDescriptor.of(
@@ -66,9 +62,9 @@ public class CXCursorVisitor {
     /**
      * Invoke the upcall stub {@code funcPtr}, with given parameters
      */
-    public static int invoke(MemorySegment funcPtr,MemorySegment cursor, MemorySegment parent, MemorySegment client_data) {
+    public static int invoke(MemorySegment funcPtr,MemorySegment _x0, MemorySegment _x1, MemorySegment _x2) {
         try {
-            return (int) DOWN$MH.invokeExact(funcPtr, cursor, parent, client_data);
+            return (int) DOWN$MH.invokeExact(funcPtr, _x0, _x1, _x2);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }

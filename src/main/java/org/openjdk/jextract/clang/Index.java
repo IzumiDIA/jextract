@@ -33,7 +33,7 @@ import org.openjdk.jextract.clang.libclang.CXUnsavedFile;
 
 import java.util.function.Consumer;
 
-import static org.openjdk.jextract.clang.libclang.Index_h.C_POINTER;
+import static org.openjdk.jextract.clang.libclang.LayoutUtils.C_POINTER;
 
 public class Index extends ClangDisposable {
 

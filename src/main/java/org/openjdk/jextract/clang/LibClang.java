@@ -36,8 +36,8 @@ import org.openjdk.jextract.clang.libclang.Index_h;
 
 import java.lang.invoke.MethodHandle;
 
-import static org.openjdk.jextract.clang.libclang.Index_h.C_INT;
-import static org.openjdk.jextract.clang.libclang.Index_h.C_POINTER;
+import static org.openjdk.jextract.clang.libclang.LayoutUtils.C_INT;
+import static org.openjdk.jextract.clang.libclang.LayoutUtils.C_POINTER;
 
 public class LibClang {
     private static final boolean DEBUG = Boolean.getBoolean("libclang.debug");
